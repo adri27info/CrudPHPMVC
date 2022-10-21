@@ -16,7 +16,7 @@ class Controlador
     //GET
     static function create()
     {
-        require_once("vistas/insertarUsuario.php");
+        require_once("vistas/insertarUsuario.html");
     }
 
     //POST
