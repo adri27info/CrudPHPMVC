@@ -24,8 +24,8 @@
     $usuario =  $_GET["usuario"];
     if ($mensaje === "insertado" || $mensaje === "actualizado" || $mensaje === "borrado") {
       echo "<p class='exito'> El usuario $usuario ha sido $mensaje correctamente. </p> <br>";
-    } else if ($mensaje === "no insertado" || $mensaje === "no actualizado" || $mensaje === "no borrado") {
-      echo "<p class='error'> Error, el usuario $usuario no se ha $mensaje correctamente </p> <br>";
+    } else if ($mensaje === "no ha podido ser insertado" || $mensaje === "no ha podido ser actualizado" || $mensaje === "no ha podido ser borrado") {
+      echo "<p class='error'> Error, el usuario $usuario $mensaje </p> <br>";
     }
   }
   ?>

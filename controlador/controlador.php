@@ -30,7 +30,7 @@ class Controlador
                 if ($usuarioInsertado != 0) {
                     $mensaje = "insertado";
                 } else {
-                    $mensaje = "no insertado";
+                    $mensaje = "no ha podido ser insertado";
                 }
                 header("Location: index.php?mensaje=$mensaje&usuario=" . $_REQUEST['nombre_usuario'] . "");
             }
@@ -79,7 +79,7 @@ class Controlador
         if ($usuarioBorrado != 0) {
             $mensaje = "borrado";
         } else {
-            $mensaje = "no borrado";
+            $mensaje = "no ha podido ser borrado";
         }
         header("Location: index.php?mensaje=$mensaje&usuario=" . $nombreUsuario[0]["nombre"] . "");
     }
